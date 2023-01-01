@@ -10,7 +10,7 @@ public:
         for(int i=0; i<nums.size(); i++)
          sum+=nums[i]; 
         int ans = pass;
-        for(int i=nums.size()-1; i>=0; i--)
+        for(int i=nums.size()-1; i>0; i--)
         {
             pass+= sum - (nums.size()*nums[i]);
             ans = max(ans,pass);
